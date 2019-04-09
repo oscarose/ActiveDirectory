@@ -69,7 +69,7 @@ Metadata:
       ADServer2PrivateIP:
         default: Domain Controller 2 Private IP Address
       AvailabilityZones:
-        default: Availability Zones
+        default: AvailabilityZones
       DomainAdminPassword:
         default: Domain Admin Password
       DomainAdminUser:
