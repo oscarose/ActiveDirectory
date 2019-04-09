@@ -177,12 +177,12 @@ Parameters:
       The logical order is preserved and only 2 AZs are used for this deployment.'
     #Type: List<AWS::EC2::AvailabilityZone::Name>
     Type: String
-    Default: us-east-1a
+    Default: us-east-1c
   NumberOfAZs:
     AllowedValues:
+      - '1'
       - '2'
-      - '3'
-    Default: '2'
+    Default: '1'
     Description: Number of Availability Zones to use in the VPC. This must match your
       selections in the list of Availability Zones parameter.
     Type: String
