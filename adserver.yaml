@@ -69,9 +69,7 @@ Metadata:
       ADServer2PrivateIP:
         default: Domain Controller 2 Private IP Address
       AvailabilityZones:
-        defaults:
-          - us-east-1a
-          - us-east-1b
+        default: Availability Zones
       DomainAdminPassword:
         default: Domain Admin Password
       DomainAdminUser:
@@ -168,6 +166,13 @@ Parameters:
       Availability Zone 2
     Type: String
   AvailabilityZones:
+    AllowedValues:
+      - us-east-1a
+      - us-east-1b
+      - us-east-1c
+      - us-east-1d
+      - us-east-1e
+      - us-east-1f
     Description: 'List of Availability Zones to use for the subnets in the VPC. Note:
       The logical order is preserved and only 2 AZs are used for this deployment.'
     Type: List<AWS::EC2::AvailabilityZone::Name>
